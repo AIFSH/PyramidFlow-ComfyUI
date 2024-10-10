@@ -1,0 +1,147 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "PyramidFlowNode",
+      "pos": {
+        "0": 578,
+        "1": 217
+      },
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "TEXT",
+          "link": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PyramidFlowNode"
+      },
+      "widgets_values": [
+        "768p",
+        16,
+        9,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PromptTextNode",
+      "pos": {
+        "0": 58,
+        "1": 90
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "TEXT",
+          "type": "TEXT",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PromptTextNode"
+      },
+      "widgets_values": [
+        "A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "PreViewVideo",
+      "pos": {
+        "0": 991,
+        "1": 171
+      },
+      "size": {
+        "0": 210,
+        "1": 154
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreViewVideo"
+      },
+      "widgets_values": [
+        {
+          "hidden": false,
+          "paused": false,
+          "params": {}
+        }
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "TEXT"
+    ],
+    [
+      2,
+      1,
+      0,
+      3,
+      0,
+      "VIDEO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}
