@@ -1,0 +1,15 @@
+[project]
+name = "pyramidflow-comfyui"
+description = "a custom node for [a/Pyramid-Flow](https://github.com/jy0205/Pyramid-Flow), you can find workflow here"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["contexttimer", "decord", "diffusers", "accelerate", "einops", "ftfy", "ipython", "opencv-python-headless", "imageio", "imageio-ffmpeg", "packaging", "pandas", "plotly", "pre-commit", "pycocoevalcap", "pycocotools", "python-magic", "scikit-image", "sentencepiece", "spacy", "streamlit", "timm", "tqdm", "transformers", "wheel", "torchmetrics", "tiktoken", "jsonlines", "tensorboardX"]
+
+[project.urls]
+Repository = "https://github.com/AIFSH/PyramidFlow-ComfyUI"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "PyramidFlow-ComfyUI"
+Icon = ""
